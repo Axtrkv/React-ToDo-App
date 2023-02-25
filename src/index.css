@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Cormorant:wght@300&family=Pacifico&family=Permanent+Marker&family=Roboto+Mono&display=swap');
+
+body {
+    font-family:'Roboto Mono';
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 42px;
+    justify-content: center;
+    color: #fff;
+    background: linear-gradient(to right, #0e4747, #0b7777);
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: 300% 300%;
+    background-image: linear-gradient(to right, #3bade3 0%, #576fe6 25%, #508496 51%, #0b7777 100%);
+    -webkit-animation: AnimateBG 20s ease infinite;
+    animation: AnimateBG 20s ease infinite;
+}
+
+@keyframes AnimateBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.App {
+    margin: 0 auto;
+    margin-top: 10%;
+    align-items: center;
+    padding: 24px;
+    gap: 16px;
+    width: 600px;
+    height: 1vh;
+    border-radius: 4px;
+    flex: none;
+    text-align: center;
+}
+
+.App .header {
+    margin-bottom: 24px;
+    margin-top: 24px;
+}
+
+.App .main {
+    margin-left: 24px;
+    margin-right: 24px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    width: 552px;
+    height: 48px;
+}
+
+.App .example {
+    width: 440px;
+    height: 48px;
+    background: #FFFFFF;
+    border: 1px solid #1B1C25;
+    border-radius: 4px;
+    flex: none;
+    font-size: 25px;
+}
+
+.App .main input {
+    outline: none;
+    border: 0;
+    color: #fff;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+.App .addBtn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    width: 48px;
+    height: 48px;
+    background: #277465;
+    border-radius: 10px;
+    border: 0;
+}
+
+.App .addBtn.plus {
+    width: 48px;
+    height: 48px;
+    font-family: 'Roboto Mono';
+    font-size: 32px;
+    line-height: 42px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    flex: none;
+    text-align: center;
+}
+
+.removeBtn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    width: 48px;
+    height: 48px;
+    background: #c45454;
+    border-radius: 10px;
+    border: 0;
+}
+
+.removeBtn.ex {
+    width: 48px;
+    height: 48px;
+    font-family: 'Roboto Mono';
+    font-size: 32px;
+    line-height: 42px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    flex: none;
+    text-align: center;
+}
+
+ul {
+    padding: 0;
+    width: 552px;
+    margin-left: 28px;
+}
+
+li, span {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 8px;
+    padding-bottom: 12px;
+    gap: 8px;
+    width: 552px;
+    height: 40px;
+    flex: none;
+    margin-top: 16px;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.Task {
+    width: 440px;
+    height: 24px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    flex: none;
+    flex-grow: 1;
+}
+
+.check {
+    width: 24px;
+    height: 24px;
+    background: #EBECF1;
+    border-radius: 10px;
+    border: 0;
+    flex: none;
+    font-size: 15px;
+}
+
+.done .Task{
+    text-decoration: line-through;
+}
+
+.done .check {
+    background: #203677;
+    color: #fff;
+}
+
+.App.addBtn {
+    width: 48px;
+    height: 48px;
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 42px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    flex: none;
+    text-align: center;
+}
+
+.taskInProcess {
+    text-decoration: line-through;
+}
+
+.remove {
+    width: 24px;
+    height: 24px;
+    background: #c45454;
+    border-radius: 4px;
+    border: 0;
+    flex: none;
+}
