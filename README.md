@@ -1,4 +1,4 @@
-Building ToDo Application using:
+ToDo Application built using:
  - HTML
  - CSS
  - JavaScript
